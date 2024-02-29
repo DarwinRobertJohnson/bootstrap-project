@@ -1,3 +1,16 @@
-.navbar-brand{
-    color:white;
+
+.navbar {
+    background-color: #FADAD7;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.accordion-button {
+    background-color: #D7E6FA;
+}
+
+.newbie-section {
+    background-color: #D7E6FA;
 }

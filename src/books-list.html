@@ -1,125 +1,175 @@
-<div class='navbar navbar-expand-lg navbar-success bg-success'>
-<div class='navbar-brand'>
-bookster!
-</div>
-<div class='dropdown'>
-<button class='btn btn-success dropdown-toggle' data-bs-toggle='dropdown'>
-Books
-<ul class='dropdown-menu'>
-<li>
-<a class='dropdown-item' href='books-list.html'>Wheel of Time</a>
-</li>
-<li>
-<a class='dropdown-item' href='books-list.html'>Lord of The Rings</a>
-</li>
-<li>
-<a class='dropdown-item' href='books-list.html'>Stormlight Archives</a>
-</li>
-</ul>
-</button>
-</div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="book-list.css" rel="stylesheet">
 </head>
 <body>
 
-<div class='row row-cols-4'>
-<div class='col'>
-<div class='card'>
-<img class='card-img-top' src='https://mpd-biblio-covers.imgix.net/9781250900012.jpg'>
-<div class='card-body'>
-<h5 class='card-title'>
-WoT book 1
-</h5>
-<p class='card-text'>
-An epic adventure fantasy novel, a must-read for any fantasy fan
-</p>
-<a class='btn btn-primary'>
-<p>Check Availability</p>
-</a>
-</div>
-</div>
-</div>
-<div class='col'>
-<div class='card'>
-<img class='card-img-top' src='https://static0.srcdn.com/wordpress/wp-content/uploads/2023/10/wot-great-hunt-1-cover.jpg'>
-<div class='card-body'>
-<h5 class='card-title'>
-WoT book 2
-</h5>
-<p class='card-text'>
-An epic adventure fantasy novel, a must-read for any fantasy fan
-</p>
-<a class='btn btn-primary'>
-<p>Check Availability</p>
-</a>
-</div>
-</div>
-</div>
-<div class='col'>
-<div class='card'>
-<img class='card-img-top' src='https://m.media-amazon.com/images/I/81jOrr8Z2nL._AC_UF1000,1000_QL80_.jpg'>
-<div class='card-body'>
-<h5 class='card-title'>
-WoT book 3
-</h5>
-<p class='card-text'>
-An epic adventure fantasy novel, a must-read for any fantasy fan
-</p>
-<a class='btn btn-primary'>
-<p>Check Availability</p>
-</a>
-</div>
-</div>
-</div>
-<div class='col'>
-<div class='card'>
-<img class='card-img-top' src='https://zezeewithbooks.files.wordpress.com/2014/06/04-the-shadow-rising.jpg'>
-<div class='card-body'>
-<h5 class='card-title'>
-WoT book 4
-</h5>
-<p class='card-text'>
-An epic adventure fantasy novel, a must-read for any fantasy fan
-</p>
-<a class='btn btn-primary'>
-<p>Check Availability</p>
-</a>
-</div>
-</div>
-</div>
-<div class='col'>
-<div class='card'>
-<img class='card-img-top' src='https://m.media-amazon.com/images/I/A1S0bFJO15L._AC_UF1000,1000_QL80_.jpg'>
-<div class='card-body'>
-<h5 class='card-title'>
-WoT book 5
-</h5>
-<p class='card-text'>
-An epic adventure fantasy novel, a must-read for any fantasy fan
-</p>
-<a class='btn btn-primary'>
-<p>Check Availability</p>
-</a>
-</div>
-</div>
-</div>
-<div class='col'>
-<div class='card'>
-<img class='card-img-top' src='https://mpd-biblio-covers.imgix.net/9780765334657.jpg'>
-<div class='card-body'>
-<h5 class='card-title'>
-WoT book 6
-</h5>
-<p class='card-text'>
-An epic adventure fantasy novel, a must-read for any fantasy fan
-</p>
-<a class='btn btn-primary'>
-<p>Check Availability</p>
-</a>
-</div>
-</div>
-</div>
-</div>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                Library.com
+              </a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Books</a>
+                  <a class="nav-link" href="books-list.html">Wheel of Time</a>
+                  <a class="nav-link" href="#">Storm Light Archives</a>
+                  <a class="nav-link" href="#">Percy Jackson</a>
+                </div>
+            </div>
+                
+            <div class="navbar bg-body-tertiary btn-group">
+             <button class="btn btn-outline-success" type="submit">Sign in</button>
+                <button class="btn btn-outline-dark" type="submit">Sign up</button>
+            </div>
+          </nav>
+    </header>
+
+    <div class="container">
+    <section class="carousel">
+        <h2>Books of the Month!<span class="badge text-bg-secondary">Updated!</span></h2>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://mpd-biblio-covers.imgix.net/9780765334657.jpg" class="d-block  w-75" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://m.media-amazon.com/images/I/A1S0bFJO15L._AC_UF1000,1000_QL80_.jpg" class="d-block w-75" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://mpd-biblio-covers.imgix.net/9781250900012.jpg" class="d-block  w-75" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+    </div>
+
+    <section class="book-cards container">
+    <h1>Welcome to The Wheel of Time!</h1>
+    <div class='row row-cols-4'>
+        <div class='col'>
+        <div class='card'>
+        <img class='card-img-top' src='https://mpd-biblio-covers.imgix.net/9781250900012.jpg'>
+        <div class='card-body'>
+        <h5 class='card-title'>
+        WoT book 1
+        </h5>
+        <p class='card-text'>
+        An epic adventure fantasy novel, a must-read for any fantasy fan
+        </p>
+        <a class='btn btn-primary'>
+        <p>Check Availability</p>
+        </a>
+        </div>
+        </img>
+        </div>
+        </div>
+        <div class='col'>
+        <div class='card'>
+        <img class='card-img-top' src='https://static0.srcdn.com/wordpress/wp-content/uploads/2023/10/wot-great-hunt-1-cover.jpg'>
+        <div class='card-body'>
+        <h5 class='card-title'>
+        WoT book 2
+        </h5>
+        <p class='card-text'>
+        An epic adventure fantasy novel, a must-read for any fantasy fan
+        </p>
+        <a class='btn btn-primary'>
+        <p>Check Availability</p>
+        </a>
+        </div>
+        </img>
+        </div>
+        </div>
+        <div class='col'>
+        <div class='card'>
+        <img class='card-img-top' src='https://m.media-amazon.com/images/I/81jOrr8Z2nL._AC_UF1000,1000_QL80_.jpg'>
+        <div class='card-body'>
+        <h5 class='card-title'>
+        WoT book 3
+        </h5>
+        <p class='card-text'>
+        An epic adventure fantasy novel, a must-read for any fantasy fan
+        </p>
+        <a class='btn btn-primary'>
+        <p>Check Availability</p>
+        </a>
+        </div>
+        </img>
+        </div>
+        </div>
+        <div class='col'>
+        <div class='card'>
+        <img class='card-img-top' src='https://zezeewithbooks.files.wordpress.com/2014/06/04-the-shadow-rising.jpg'>
+        <div class='card-body'>
+        <h5 class='card-title'>
+        WoT book 4
+        </h5>
+        <p class='card-text'>
+        An epic adventure fantasy novel, a must-read for any fantasy fan
+        </p>
+        <a class='btn btn-primary'>
+        <p>Check Availability</p>
+        </a>
+        </div>
+        </img>
+        </div>
+        </div>
+        <div class='col'>
+        <div class='card'>
+        <img class='card-img-top' src='https://m.media-amazon.com/images/I/A1S0bFJO15L._AC_UF1000,1000_QL80_.jpg'>
+        <div class='card-body'>
+        <h5 class='card-title'>
+        WoT book 5
+        </h5>
+        <p class='card-text'>
+        An epic adventure fantasy novel, a must-read for any fantasy fan
+        </p>
+        <a class='btn btn-primary'>
+        <p>Check Availability</p>
+        </a>
+        </div>
+        </img>
+        </div>
+        </div>
+        <div class='col'>
+        <div class='card'>
+        <img class='card-img-top' src='https://mpd-biblio-covers.imgix.net/9780765334657.jpg'>
+        <div class='card-body'>
+        <h5 class='card-title'>
+        WoT book 6
+        </h5>
+        <p class='card-text'>
+        An epic adventure fantasy novel, a must-read for any fantasy fan
+        </p>
+        <a class='btn btn-primary'>
+        <p>Check Availability</p>
+        </a>
+        </div>
+        </img>
+        </div>
+        </div>
+        </div>
+        
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+</html>
